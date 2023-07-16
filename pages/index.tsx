@@ -4,7 +4,7 @@ import Hero from "@/components/home/hero";
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen">
+      <section className="flex flex-col items-center min-h-screen">
         <Navbar />
         <Hero />
       </section>

@@ -12,3 +12,7 @@ body {
   color: var(--fg-color);
   background: var(--bg-color);
 }
+
+#tsparticles {
+  z-index: -10;
+}

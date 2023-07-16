@@ -22,7 +22,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="py-2 px-3 bg-violet-600 rounded-md hover:cursor-pointer">Change Theme</button>
+      <button className="py-2 px-3 bg-sky-600 rounded-md hover:cursor-pointer">Change Theme</button>
     </nav>
   );
 };

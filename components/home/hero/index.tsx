@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex items-center gap-5 mt-20">
+    <div className="flex items-center mt-20">
       <div
         className="relative before:content-[''] before:absolute before:left-[50%] before:top-[50%] before:translate-x-[-50%] 
       before:translate-y-[-50%] before:h-64 before:w-[600px] before:bg-gray-800 before:blur-[120px] before:-z-10 before:rounded-full">
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <Image src={"/programmer.svg"} alt="My logo" width={400} height={400}></Image>
+      <Image src={"/programmer.svg"} alt="My logo" width={450} height={450}></Image>
     </div>
   );
 };

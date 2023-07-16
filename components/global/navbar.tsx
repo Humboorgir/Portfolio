@@ -6,6 +6,21 @@ const Navbar = () => {
         <span className="text-sky-500">{"Iliya"}</span>
         <span className="text-violet-600">{"/>"}</span>
       </h3>
+
+      <ul className="flex items-center gap-8">
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>About</a>
+        </li>
+        <li>
+          <a>Projects</a>
+        </li>
+        <li>
+          <a>Contact</a>
+        </li>
+      </ul>
     </nav>
   );
 };

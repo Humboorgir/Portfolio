@@ -27,12 +27,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <Image
-        className="rounded-full border-4 border-gray-600"
-        src={"/logo.jpg"}
-        alt="My logo"
-        width={300}
-        height={300}></Image>
+      <Image src={"/programmer.svg"} alt="My logo" width={400} height={400}></Image>
     </div>
   );
 };

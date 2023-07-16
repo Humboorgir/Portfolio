@@ -21,6 +21,8 @@ const Navbar = () => {
           <a>Contact</a>
         </li>
       </ul>
+
+      <button className="py-2 px-3 bg-violet-600 rounded-md hover:cursor-pointer">Change Theme</button>
     </nav>
   );
 };

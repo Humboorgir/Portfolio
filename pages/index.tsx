@@ -5,6 +5,7 @@ import HeroDescription from "@/components/home/hero/description";
 import HeroAboutButton from "@/components/home/hero/aboutbutton";
 import HeroContactButton from "@/components/home/hero/contactbutton";
 import HeroProgrammerImage from "@/components/home/hero/programmerimage";
+import AboutTitle from "@/components/home/about/title";
 
 import { BsArrowDown } from "react-icons/bs";
 
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <>
       {/* hero section  */}
-      <section className="relative flex min-h-screen flex-col items-center">
+      <section className="relative mb-12 flex min-h-screen flex-col items-center">
         <Particles />
         <Navbar />
         <div className="mt-16 flex items-center justify-center">
@@ -35,7 +36,11 @@ export default function Home() {
       </section>
 
       {/* about section  */}
-      <section className="flex min-h-screen flex-col items-center"></section>
+      <section className="flex min-h-screen flex-col items-center">
+        <div>
+          <AboutTitle />
+        </div>
+      </section>
     </>
   );
 }

@@ -1,14 +1,17 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import { Container, Engine } from "tsparticles-engine";
+import type { Container, Engine } from "tsparticles-engine";
 
 const ParticlesComponent = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {}, []);
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {},
+    [],
+  );
   return (
     <Particles
       id="tsparticles"
@@ -61,6 +64,7 @@ const ParticlesComponent = () => {
           },
         },
         detectRetina: true,
+        fullScreen: false,
       }}
       init={particlesInit}
       loaded={particlesLoaded}

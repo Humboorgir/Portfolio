@@ -7,7 +7,7 @@ import { BsArrowDown } from "react-icons/bs";
 export default function Home() {
   return (
     <>
-      <section className="flex min-h-screen flex-col items-center">
+      <section className="relative flex min-h-screen flex-col items-center">
         <Particles />
         <Navbar />
         <Hero />

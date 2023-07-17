@@ -59,7 +59,7 @@ export default function Home() {
         <AboutPersonalInfo />
       </section>
 
-      <section className="mx-auto min-h-screen max-w-5xl pt-20">
+      <section className="mx-auto mb-10 min-h-screen max-w-5xl pt-12">
         <ProjectsTitle />
         <Projects projects={projects} />
       </section>

@@ -1,7 +1,7 @@
 import Title from "@/components/home/hero/title";
 import Description from "@/components/home/hero/description";
-
-import { BsArrowDown } from "react-icons/bs";
+import AboutButton from "@/components/home/hero/aboutbutton";
+import ContactButton from "@/components/home/hero/contactbutton";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -17,19 +17,8 @@ const Hero = () => {
         <Title />
         <Description />
         <div className="flex items-center gap-3">
-          <Link
-            className="flex w-fit items-center gap-2 rounded-lg bg-gradient-to-br from-primary to-sky-800 px-4 py-3"
-            href="/github"
-          >
-            Get to know me better
-            <BsArrowDown className="text-lg" />
-          </Link>
-          <Link
-            className="flex w-fit items-center gap-2 rounded-lg bg-gradient-to-br from-violet-600 to-violet-700 px-4 py-3"
-            href="/github"
-          >
-            Contact me
-          </Link>
+          <AboutButton />
+          <ContactButton />
         </div>
       </div>
 

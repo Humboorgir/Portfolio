@@ -27,7 +27,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <Image src={"/programmer.svg"} alt="My logo" width={450} height={450}></Image>
+      <Image
+        className="hidden md:inline"
+        src={"/programmer.svg"}
+        alt="My logo"
+        width={450}
+        height={450}></Image>
     </div>
   );
 };

@@ -1,11 +1,5 @@
 import Project from "@/components/home/projects/project";
 
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-}
-
 interface Props {
   projects: Project[];
 }

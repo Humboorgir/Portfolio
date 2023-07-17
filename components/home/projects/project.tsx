@@ -1,9 +1,5 @@
 interface Props {
-  project: {
-    title: string;
-    description: string;
-    image: string;
-  };
+  project: Project;
 }
 
 const Project = ({ project }: Props) => {

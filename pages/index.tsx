@@ -11,7 +11,9 @@ import AboutTechnologies from "@/components/home/about/technologies";
 import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
+
 import { BsArrowDown } from "react-icons/bs";
+import projects from "@/projects.json";
 
 export default function Home() {
   return (
@@ -58,7 +60,7 @@ export default function Home() {
 
       <section className="mx-auto min-h-screen max-w-5xl pt-20">
         <ProjectsTitle />
-        <Projects />
+        <Projects projects={projects} />
       </section>
     </>
   );

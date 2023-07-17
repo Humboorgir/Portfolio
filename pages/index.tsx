@@ -5,7 +5,7 @@ import Hero from "@/components/home/hero";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col items-center min-h-screen">
+      <section className="flex min-h-screen flex-col items-center ">
         <Particles />
         <Navbar />
         <Hero />

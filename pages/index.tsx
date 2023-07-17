@@ -42,8 +42,8 @@ export default function Home() {
       <section className="flex min-h-screen flex-col items-center pt-16">
         <div
           className="relative before:absolute before:left-[50%] before:top-[50%] before:-z-10 
-      before:h-full before:w-full before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full 
-       before:bg-gray-800 before:blur-xl before:content-['']"
+      before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
+       before:bg-gray-800 before:blur-3xl before:content-['']"
         >
           <AboutTitle />
           <AboutDescription />

@@ -9,6 +9,7 @@ import AboutTitle from "@/components/home/about/title";
 import AboutDescription from "@/components/home/about/description";
 import AboutTechnologies from "@/components/home/about/technologies";
 import AboutPersonalInfo from "@/components/home/about/personalinfo";
+import ProjectsTitle from "@/components/home/projects/title";
 import { BsArrowDown } from "react-icons/bs";
 
 export default function Home() {
@@ -54,7 +55,9 @@ export default function Home() {
         <AboutPersonalInfo />
       </section>
 
-      <section className="min-h-screen"></section>
+      <section className="grid min-h-screen place-items-center">
+        <ProjectsTitle />
+      </section>
     </>
   );
 }

@@ -7,7 +7,7 @@ import HeroContactButton from "@/components/home/hero/contactbutton";
 import HeroProgrammerImage from "@/components/home/hero/programmerimage";
 import AboutTitle from "@/components/home/about/title";
 import AboutDescription from "@/components/home/about/description";
-
+import AboutTechnologies from "@/components/home/about/technologies";
 import { BsArrowDown } from "react-icons/bs";
 
 import Image from "next/image";
@@ -41,12 +41,15 @@ export default function Home() {
       {/* about section  */}
       <section className="flex min-h-screen flex-col items-center pt-16">
         <div
-          className="relative before:absolute before:left-[50%] before:top-[50%] before:-z-10 
+          className="relative flex items-center gap-10 before:absolute before:left-[50%] before:top-[50%] before:-z-10 
       before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
        before:bg-gray-800 before:blur-3xl before:content-['']"
         >
-          <AboutTitle />
-          <AboutDescription />
+          <div>
+            <AboutTitle />
+            <AboutDescription />
+          </div>
+          <AboutTechnologies />
         </div>
       </section>
     </>

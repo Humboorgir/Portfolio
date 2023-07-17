@@ -2,9 +2,7 @@ import Title from "@/components/home/hero/title";
 import Description from "@/components/home/hero/description";
 import AboutButton from "@/components/home/hero/aboutbutton";
 import ContactButton from "@/components/home/hero/contactbutton";
-
-import Image from "next/image";
-import Link from "next/link";
+import ProgrammerImage from "@/components/home/hero/programmerimage";
 
 const Hero = () => {
   return (
@@ -22,13 +20,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <Image
-        className="-ml-12 mb-8 hidden scale-x-[-1] md:inline"
-        src={"/programmer.svg"}
-        alt="My logo"
-        width={450}
-        height={450}
-      ></Image>
+      <ProgrammerImage />
     </div>
   );
 };

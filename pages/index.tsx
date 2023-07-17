@@ -6,14 +6,17 @@ import HeroAboutButton from "@/components/home/hero/aboutbutton";
 import HeroContactButton from "@/components/home/hero/contactbutton";
 import HeroProgrammerImage from "@/components/home/hero/programmerimage";
 import AboutTitle from "@/components/home/about/title";
+import AboutDescription from "@/components/home/about/description";
 
 import { BsArrowDown } from "react-icons/bs";
+
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       {/* hero section  */}
-      <section className="relative mb-12 flex min-h-screen flex-col items-center">
+      <section className="relative flex min-h-screen flex-col items-center">
         <Particles />
         <Navbar />
         <div className="mt-16 flex items-center justify-center">
@@ -32,13 +35,18 @@ export default function Home() {
 
           <HeroProgrammerImage />
         </div>
-        <BsArrowDown className="mb-10 mt-auto h-16 w-16 animate-bounce opacity-50" />
+        <BsArrowDown className="mt-16 h-16 w-16 animate-bounce opacity-50 md:mb-10 md:mt-auto" />
       </section>
 
       {/* about section  */}
-      <section className="flex min-h-screen flex-col items-center">
-        <div>
+      <section className="flex min-h-screen flex-col items-center pt-16">
+        <div
+          className="relative before:absolute before:left-[50%] before:top-[50%] before:-z-10 
+      before:h-full before:w-full before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full 
+       before:bg-gray-800 before:blur-xl before:content-['']"
+        >
           <AboutTitle />
+          <AboutDescription />
         </div>
       </section>
     </>

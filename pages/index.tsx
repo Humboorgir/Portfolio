@@ -11,6 +11,7 @@ import AboutTechnologies from "@/components/home/about/technologies";
 import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
+import Footer from "@/components/global/footer";
 
 import { BsArrowDown } from "react-icons/bs";
 import projects from "@/projects.js";
@@ -62,6 +63,8 @@ export default function Home() {
         <ProjectsTitle />
         <Projects projects={projects} />
       </section>
+
+      <Footer />
     </>
   );
 }

@@ -26,7 +26,8 @@ const Hero = () => {
             className="flex w-fit items-center gap-2 rounded-lg bg-gradient-to-br from-primary to-sky-800 px-4 py-3"
             href="/github"
           >
-            Get to know me better <BsArrowDown className="text-lg" />
+            Get to know me better
+            <BsArrowDown className="text-lg" />
           </Link>
           <Link
             className="flex w-fit items-center gap-2 rounded-lg bg-gradient-to-br from-violet-600 to-violet-700 px-4 py-3"

@@ -1,6 +1,6 @@
 const PersonalInfo = () => {
   return (
-    <div className="flex w-full max-w-4xl flex-wrap justify-around">
+    <div className="flex w-full max-w-4xl flex-wrap justify-around gap-8">
       <div className="flex flex-col">
         <span className="text-slate-300">Name:</span>
         <span className="text-lg">Iliya</span>

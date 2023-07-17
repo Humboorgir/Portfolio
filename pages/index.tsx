@@ -10,6 +10,7 @@ import AboutDescription from "@/components/home/about/description";
 import AboutTechnologies from "@/components/home/about/technologies";
 import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import ProjectsTitle from "@/components/home/projects/title";
+import Projects from "@/components/home/projects/projects";
 import { BsArrowDown } from "react-icons/bs";
 
 export default function Home() {
@@ -39,10 +40,10 @@ export default function Home() {
       </section>
 
       {/* about section  */}
-      <section className="grid min-h-screen place-items-center pt-16">
+      <section className="grid min-h-screen place-items-center px-4 pt-16">
         {/* description and technologies */}
         <div
-          className="relative mb-12 flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
+          className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
            before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
             before:bg-gray-800 before:blur-[120px] before:content-[''] md:flex-row md:gap-12"
         >
@@ -55,8 +56,9 @@ export default function Home() {
         <AboutPersonalInfo />
       </section>
 
-      <section className="grid min-h-screen place-items-center">
+      <section className="mx-auto min-h-screen max-w-5xl pt-20">
         <ProjectsTitle />
+        <Projects />
       </section>
     </>
   );

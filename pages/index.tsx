@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* about section  */}
-      <section className="flex min-h-screen flex-col items-center pt-16">
+      <section className="grid min-h-screen place-items-center pt-16">
         {/* description and technologies */}
         <div
           className="relative mb-12 flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
@@ -53,6 +53,8 @@ export default function Home() {
         </div>
         <AboutPersonalInfo />
       </section>
+
+      <section className="min-h-screen"></section>
     </>
   );
 }

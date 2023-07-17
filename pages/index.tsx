@@ -8,9 +8,8 @@ import HeroProgrammerImage from "@/components/home/hero/programmerimage";
 import AboutTitle from "@/components/home/about/title";
 import AboutDescription from "@/components/home/about/description";
 import AboutTechnologies from "@/components/home/about/technologies";
+import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import { BsArrowDown } from "react-icons/bs";
-
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -52,25 +51,7 @@ export default function Home() {
           </div>
           <AboutTechnologies />
         </div>
-
-        <div className="flex w-full max-w-4xl flex-wrap justify-around">
-          <div className="flex flex-col">
-            <span className="text-slate-300">Name:</span>
-            <span className="text-lg">Iliya</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-slate-300">Date of birth:</span>
-            <span className="text-lg">2008/5/9</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-slate-300">Experience:</span>
-            <span className="text-lg">+3 years</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-slate-300">Location:</span>
-            <span className="text-lg">Iran</span>
-          </div>
-        </div>
+        <AboutPersonalInfo />
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 import Title from "@/components/home/hero/title";
+import Description from "@/components/home/hero/description";
 
 import { BsArrowDown } from "react-icons/bs";
 
@@ -14,11 +15,7 @@ const Hero = () => {
        before:blur-[120px] before:content-['']"
       >
         <Title />
-        <p className="mb-5 max-w-sm text-base text-slate-300">
-          Every great project starts with an idea. Whether it's a startup, a
-          small business, or a personal project and I'm here to help bring those
-          ideas to life
-        </p>
+        <Description />
         <div className="flex items-center gap-3">
           <Link
             className="flex w-fit items-center gap-2 rounded-lg bg-gradient-to-br from-primary to-sky-800 px-4 py-3"

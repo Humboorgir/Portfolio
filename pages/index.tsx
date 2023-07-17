@@ -13,6 +13,7 @@ export default function Home() {
         <Hero />
         <BsArrowDown className="mb-10 mt-auto h-16 w-16 animate-bounce opacity-50" />
       </section>
+      <section className="flex min-h-screen flex-col items-center"></section>
     </>
   );
 }

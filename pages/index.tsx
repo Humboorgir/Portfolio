@@ -13,7 +13,7 @@ import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
 
 import { BsArrowDown } from "react-icons/bs";
-import projects from "@/projects.json";
+import projects from "@/projects.js";
 
 export default function Home() {
   return (

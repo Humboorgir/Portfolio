@@ -16,7 +16,9 @@ const Project = ({ project }: Props) => {
         width={400}
       ></Image>
       <h2 className="text-xl">{project.title}</h2>
-      <p className="mb-2 text-sm text-slate-300">{project.description}</p>
+      <p className="mb-2 text-center text-sm text-slate-300">
+        {project.description}
+      </p>
       <Link
         variant="blue"
         href="/somewebsite.com"

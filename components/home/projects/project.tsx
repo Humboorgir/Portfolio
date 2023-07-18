@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "@/components/global/link";
 
 interface Props {
   project: Project;
@@ -15,7 +16,14 @@ const Project = ({ project }: Props) => {
         width={400}
       ></Image>
       <h2 className="text-xl">{project.title}</h2>
-      <p className="text-sm text-slate-300">{project.description}</p>
+      <p className="mb-2 text-sm text-slate-300">{project.description}</p>
+      <Link
+        variant="blue"
+        href="/somewebsite.com"
+        className="!flex !w-full !justify-center !rounded-full !py-2"
+      >
+        Repository
+      </Link>
     </div>
   );
 };

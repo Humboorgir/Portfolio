@@ -20,7 +20,7 @@ export default [
   {
     title: "Sweet's dashboard",
     description:
-      "Sweet's dashboard, Built with Next.js, Tailwindcss, Next-auth and Material UI",
+      "Sweet's dashboard, built with Next.js, Tailwindcss, Next-auth and Material UI",
     image: "/sweets-dashboard.png",
   },
 ];

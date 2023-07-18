@@ -7,7 +7,7 @@ const Navbar = () => {
         <span className="text-violet-400">{"/>"}</span>
       </h3>
 
-      <ul className="flex items-center gap-8">
+      <ul className="hidden items-center gap-8 md:flex">
         <li>
           <a>Home</a>
         </li>

@@ -17,17 +17,9 @@ const Button = ({ variant, href, children, className }: Props) => {
       : "bg-gradient-to-br from-violet-600 to-violet-700";
   return (
     <motion.div
-      initial={{ scale: 1 }}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+      className={`flex w-fit cursor-pointer items-center justify-between gap-2 rounded-lg px-4 py-3 ${bgStyle} ${className}`}
     >
-      <Link
-        className={`flex w-fit scale-100 items-center justify-between gap-2 rounded-lg px-4 py-3
-       transition-transform hover:scale-105 active:scale-95 ${bgStyle} ${className}`}
-        href={href}
-      >
-        {children}
-      </Link>
+      <Link href={href}>{children}</Link>
     </motion.div>
   );
 };

@@ -7,7 +7,10 @@ interface Props {
 
 const Project = ({ project }: Props) => {
   return (
-    <div className="relative flex max-w-xs flex-col items-center gap-2 rounded-lg border-2 border-neutral-800 bg-neutral-900 p-5">
+    <div
+      className="flex w-80 flex-col items-center gap-2 rounded-lg border-2
+     border-neutral-800 bg-neutral-900 p-5"
+    >
       <Image
         className="h-[140px] rounded-md border border-neutral-800"
         src={project.image}

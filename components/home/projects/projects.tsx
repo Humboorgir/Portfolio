@@ -6,10 +6,12 @@ interface Props {
 
 const Projects = ({ projects }: Props) => {
   return (
-    <div className="flex flex-wrap items-center gap-6">
+    <div className="flex flex-wrap items-center justify-center gap-6">
       {projects.map((project, i) => {
         return <Project key={i} project={project} />;
       })}
+      <div className="hidden w-80 md:flex" style={{ visibility: "hidden" }} />
+      <div className="hidden w-80 md:flex" style={{ visibility: "hidden" }} />
     </div>
   );
 };

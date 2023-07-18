@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* about section  */}
-      <section className="grid min-h-screen place-items-center px-4 pt-16">
+      <section className="mb-20 grid min-h-screen place-items-center px-4 pt-16 md:mb-0">
         {/* description and technologies */}
         <div
           className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
@@ -59,7 +59,8 @@ export default function Home() {
         <AboutPersonalInfo />
       </section>
 
-      <section className="mx-auto mb-10 min-h-screen max-w-5xl pt-12">
+      {/* projects section  */}
+      <section className="mx-auto mb-10 flex min-h-screen flex-col items-center px-[min(80px,5vw)] pt-12">
         <ProjectsTitle />
         <Projects projects={projects} />
       </section>

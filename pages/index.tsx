@@ -23,11 +23,11 @@ export default function Home() {
       <section className="relative flex min-h-screen flex-col items-center">
         <Particles />
         <Navbar />
-        <div className="mt-16 flex items-center justify-center">
+        <div className="mt-16 flex items-center justify-center gap-0">
           <div
-            className="relative before:absolute before:left-[50%] before:top-[50%] before:-z-10 before:h-64 
-      before:w-[600px] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full before:bg-gray-800
-       before:blur-[120px] before:content-['']"
+            className="relative flex flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10
+             before:h-64 before:w-[min(600px,98vw)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full
+             before:bg-gray-800 before:blur-[120px] before:content-[''] md:items-start"
           >
             <HeroTitle />
             <HeroDescription />

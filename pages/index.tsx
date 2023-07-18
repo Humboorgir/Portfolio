@@ -31,7 +31,7 @@ export default function Home() {
           >
             <HeroTitle />
             <HeroDescription />
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col items-center gap-3 md:flex-row">
               <HeroAboutButton />
               <HeroContactButton />
             </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
           <HeroProgrammerImage />
         </div>
-        <BsArrowDown className="mt-16 h-16 w-16 animate-bounce opacity-50 md:mb-10 md:mt-auto" />
+        <BsArrowDown className="mt-20 h-16 w-16 animate-bounce opacity-50 md:mb-10 md:mt-auto" />
       </section>
 
       {/* about section  */}

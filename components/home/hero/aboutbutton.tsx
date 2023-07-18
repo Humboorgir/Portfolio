@@ -1,11 +1,13 @@
 import Link from "@/components/global/link";
 
-import { BsArrowDown } from "react-icons/bs";
-
 const AboutButton = () => {
   return (
-    <Link variant="blue" href="#about">
-      Get to know me better <BsArrowDown className="text-lg" />
+    <Link
+      variant="blue"
+      href="#about"
+      className="w-[280px] border-2 border-sky-600 bg-none text-sky-400 sm:w-[350px] md:w-[auto]"
+    >
+      Get to know me better
     </Link>
   );
 };

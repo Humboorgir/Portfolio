@@ -1,6 +1,6 @@
 const PersonalInfo = () => {
   return (
-    <div className="flex w-full max-w-4xl flex-wrap justify-around gap-8">
+    <div className="mt-20 grid w-full  max-w-md grid-cols-2 place-items-center gap-8 md:mt-0 md:max-w-4xl md:grid-cols-4">
       <div className="flex flex-col">
         <span className="text-slate-300">Name:</span>
         <span className="text-lg">Iliya</span>

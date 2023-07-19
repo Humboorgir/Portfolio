@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        ripple: "ripple 850ms linear",
+      },
+
+      keyframes: {
+        ripple: {
+          "100%": { opacity: "0", transform: "scale(2)" },
+        },
+      },
+
       colors: {
         primary: "#0275d8",
       },

@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
 
-import { motion } from "framer-motion";
+import Ripple from "@/components/global/ripple";
 import Link from "next/link";
+
 interface Props {
   variant: "blue" | "violet";
   href: string;
@@ -16,11 +17,14 @@ const Button = ({ variant, href, children, className }: Props) => {
       ? "bg-gradient-to-br from-primary to-sky-800"
       : "bg-gradient-to-br from-violet-600 to-violet-700";
   return (
-    <motion.div
-      className={`flex w-fit cursor-pointer items-center justify-between gap-2 rounded-lg px-4 py-3 ${bgStyle} ${className}`}
+    <Link
+      className={`relative flex w-fit cursor-pointer items-center justify-between gap-2 overflow-hidden rounded-lg px-4 py-3 ${bgStyle} ${className}
+        hover:`}
+      href={href}
     >
-      <Link href={href}>{children}</Link>
-    </motion.div>
+      {children}
+      <Ripple />
+    </Link>
   );
 };
 

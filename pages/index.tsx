@@ -13,6 +13,7 @@ import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
 import Footer from "@/components/global/footer";
 
+import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import projects from "@/projects.js";
 
@@ -45,7 +46,7 @@ export default function Home() {
       {/* about section  */}
       <section className="mb-20 grid min-h-screen place-items-center px-4 pt-16 md:mb-0">
         {/* description and technologies */}
-        <div
+        <motion.div
           className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
            before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
             before:bg-gray-800 before:blur-[120px] before:content-[''] md:flex-row md:gap-12"
@@ -55,7 +56,7 @@ export default function Home() {
             <AboutDescription />
           </div>
           <AboutTechnologies />
-        </div>
+        </motion.div>
         <AboutPersonalInfo />
       </section>
 

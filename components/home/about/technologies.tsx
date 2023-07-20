@@ -46,7 +46,7 @@ const Technologies = () => {
               key={i}
               initial={{ opacity: 0, x: "100px" }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut", delay: i / 8 }}
+              transition={{ duration: 0.8, ease: "easeInOut", delay: i / 20 }}
               className="text-sky-500"
             >
               {skill}

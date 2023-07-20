@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const skills = [
   "HTML",
   "CSS",
@@ -30,14 +32,29 @@ const skills = [
 
 const Technologies = () => {
   return (
-    <div className="mt-16">
+    <motion.div
+      initial={{ opacity: 0, x: "100px" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+      className="mt-16"
+    >
       <h2 className="mb-3 text-xl font-bold leading-snug">Technologies:</h2>
       <div className="flex max-w-sm flex-wrap items-center gap-2">
-        {skills.map((skill: string) => {
-          return <span className="text-sky-500">{skill}</span>;
+        {skills.map((skill: string, i) => {
+          return (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0, x: "100px" }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeInOut", delay: i / 8 }}
+              className="text-sky-500"
+            >
+              {skill}
+            </motion.span>
+          );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

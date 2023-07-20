@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 const Description = () => {
   return (
-    <p className="max-w-md text-lg leading-snug text-slate-300">
+    <motion.p
+      initial={{ opacity: 0, y: "100px" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+      className="max-w-md text-lg leading-snug text-slate-300"
+    >
       Hey there! I'm Iliya, a 15 year old high school student and full stack web
       developer from Iran. I've been programming since early 2020 or in other
       words, since I had just turned 12! I've been using computers since the age
@@ -12,7 +19,7 @@ const Description = () => {
       managed to learn CSS and most major frontend frameworks to a very high
       degree and as mentioned earlier, I'm very passionate towards my work and
       always open to gain new skills.
-    </p>
+    </motion.p>
   );
 };
 

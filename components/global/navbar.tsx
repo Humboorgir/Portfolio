@@ -1,13 +1,12 @@
 const Navbar = () => {
   return (
-    <nav className="flex w-full items-center justify-between p-5 md:px-[7%]">
-      <h3 className="text-2xl">
-        <span className="text-violet-400">{"<"}</span>
-        <span className="text-sky-400">{"Iliya"}</span>
-        <span className="text-violet-400">{"/>"}</span>
-      </h3>
+    <nav
+      className="flex h-[70px] w-screen items-center justify-between bg-gradient-to-br from-sky-600 to-sky-800 
+    p-5 md:px-[7%]"
+    >
+      <h3 className="grow-1 mb-2 basis-0 text-3xl">Iliya</h3>
 
-      <ul className="hidden items-center gap-8 md:flex">
+      <ul className="grow-4 hidden basis-0 items-center gap-8 md:flex">
         <li>
           <a>Home</a>
         </li>
@@ -22,7 +21,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="rounded-md bg-sky-600 px-3 py-2 hover:cursor-pointer">
+      <button className="grow-1 basis-0 rounded-md bg-sky-600 px-3 py-2 hover:cursor-pointer">
         Change Theme
       </button>
     </nav>

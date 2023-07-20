@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        ripple: "ripple 850ms linear",
+        ripple: "ripple 600ms linear",
       },
 
       keyframes: {
         ripple: {
-          "100%": { opacity: "0", transform: "scale(2)" },
+          "0%": { opacity: "100%", transform: "scale(0)" },
+          "100%": { opacity: "0%", transform: "scale(2)" },
         },
       },
 

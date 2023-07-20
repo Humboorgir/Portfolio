@@ -16,7 +16,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Date of birth:</span>
@@ -26,7 +26,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Experience:</span>
@@ -36,7 +36,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Location:</span>

@@ -15,7 +15,6 @@
 body {
   color: var(--fg-color);
   background: var(--bg-color);
-  padding-inline: 16px;
   overflow-x: hidden;
 }
 

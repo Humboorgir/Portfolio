@@ -22,7 +22,7 @@ import { FaMoon } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav
-      className="fixed z-20 grid h-[70px] w-screen grid-cols-11 place-items-center bg-gradient-to-br from-sky-600 to-sky-800 
+      className="fixed z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
     px-5 md:px-[7%]"
     >
       <h3 className="col-start-1 col-end-3 mb-2 text-3xl">Iliya</h3>
@@ -32,7 +32,7 @@ const Navbar = () => {
           return (
             <li className="h-full">
               <a
-                className="grid h-full w-24 cursor-pointer place-items-center transition-colors hover:bg-sky-600"
+                className="hover: grid h-full w-24 cursor-pointer place-items-center transition-colors"
                 href={link.url}
               >
                 {link.text}

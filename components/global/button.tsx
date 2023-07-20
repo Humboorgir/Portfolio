@@ -28,14 +28,14 @@ const Button = ({ variant, href, children, className }: Props) => {
     );
 
   return (
-    <Link
+    <a
       className={`relative flex w-fit cursor-pointer items-center justify-center gap-2
       overflow-hidden rounded-lg px-4 py-3 ${bgStyle} ${className}`}
       href={href}
     >
       {children}
       <Ripple />
-    </Link>
+    </a>
   );
 };
 

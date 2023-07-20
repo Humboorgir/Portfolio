@@ -5,7 +5,7 @@ import Link from "next/link";
 
 interface Props {
   variant: "blue" | "violet";
-  href: string;
+  href?: string;
   children: ReactNode;
   //   for custom styles:
   className?: string;
@@ -16,14 +16,26 @@ const Button = ({ variant, href, children, className }: Props) => {
     variant === "blue"
       ? "bg-gradient-to-br from-primary to-sky-800"
       : "bg-gradient-to-br from-violet-600 to-violet-700";
+  if (!href)
+    return (
+      <button
+        className={`relative flex w-fit cursor-pointer items-center justify-center
+         gap-2 overflow-hidden rounded-lg px-4 py-3 ${bgStyle} ${className}`}
+      >
+        {children}
+        <Ripple />
+      </button>
+    );
+
   return (
-    <button
-      className={`relative flex w-fit cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg px-4 py-3 ${bgStyle} ${className}
-        hover:`}
+    <Link
+      className={`relative flex w-fit cursor-pointer items-center justify-center gap-2
+      overflow-hidden rounded-lg px-4 py-3 ${bgStyle} ${className}`}
+      href={href}
     >
       {children}
       <Ripple />
-    </button>
+    </Link>
   );
 };
 

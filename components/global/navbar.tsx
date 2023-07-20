@@ -1,3 +1,22 @@
+const links = [
+  {
+    text: "Home",
+    url: "#home",
+  },
+  {
+    text: "About",
+    url: "#about",
+  },
+  {
+    text: "Projects",
+    url: "#projects",
+  },
+  {
+    text: "Contact",
+    url: "#contact",
+  },
+];
+
 const Navbar = () => {
   return (
     <nav
@@ -6,19 +25,19 @@ const Navbar = () => {
     >
       <h3 className="grow-1 mb-2 basis-0 text-3xl">Iliya</h3>
 
-      <ul className="grow-4 hidden basis-0 items-center gap-8 md:flex">
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>About</a>
-        </li>
-        <li>
-          <a>Projects</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
+      <ul className="grow-4 hidden h-[70px] basis-0 items-center text-lg md:flex">
+        {links.map((link) => {
+          return (
+            <li className="h-full">
+              <a
+                className="grid h-full w-24 cursor-pointer place-items-center transition-colors hover:bg-sky-600"
+                href={link.url}
+              >
+                {link.text}
+              </a>
+            </li>
+          );
+        })}
       </ul>
 
       <button className="grow-1 basis-0 rounded-md bg-sky-600 px-3 py-2 hover:cursor-pointer">

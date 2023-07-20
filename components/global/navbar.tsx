@@ -1,3 +1,5 @@
+import Ripple from "@/components/global/ripple";
+
 import Image from "next/image";
 import { FaMoon } from "react-icons/fa";
 
@@ -56,10 +58,11 @@ const Navbar = () => {
       </ul>
 
       <button
-        className="col-start-10 col-end-12 flex items-center gap-2 rounded-full border-2 border-sky-600 px-4 py-3
-       text-sky-400 hover:cursor-pointer"
+        className="relative col-start-10 col-end-12 flex items-center gap-2 overflow-hidden rounded-full 
+        border-2 border-sky-600 px-4 py-3 text-sky-400 hover:cursor-pointer"
       >
         Theme <FaMoon className="mt-0.5 scale-x-[-1] text-white" />
+        <Ripple />
       </button>
     </nav>
   );

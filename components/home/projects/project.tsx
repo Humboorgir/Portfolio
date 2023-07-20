@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "@/components/global/link";
+import Link from "@/components/global/button";
 
 interface Props {
   project: Project;

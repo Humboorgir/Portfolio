@@ -1,4 +1,4 @@
-import Link from "@/components/global/link";
+import Link from "@/components/global/button";
 
 const ContactButton = () => {
   return (

@@ -39,7 +39,7 @@ const Navbar = () => {
         <h3 className="mb-1 text-2xl">Iliya</h3>
       </div>
 
-      <ul className=" col-start-3 col-end-10 hidden h-[65px] items-center text-lg md:flex">
+      <ul className=" col-start-3 col-end-10 hidden h-[65px] items-center text-base md:flex">
         {links.map((link) => {
           return (
             <li className="h-full">

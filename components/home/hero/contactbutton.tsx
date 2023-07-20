@@ -5,7 +5,7 @@ const ContactButton = () => {
     <Link
       variant="blue"
       href="#contact"
-      className="w-[280px] sm:w-[350px] md:w-[auto]"
+      className="!w-[280px] sm:!w-[350px] md:!w-[auto]"
     >
       Contact me
     </Link>

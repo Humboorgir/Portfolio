@@ -20,7 +20,7 @@ const useDebouncedRippleCleanUp = (
   }, [rippleCount, duration, cleanUpFunction]);
 };
 
-const Ripple = ({ duration = 850, color = "#fff" }) => {
+const Ripple = ({ duration = 600 }) => {
   interface Ripple {
     y: number;
     x: number;
@@ -51,10 +51,7 @@ const Ripple = ({ duration = 850, color = "#fff" }) => {
   };
 
   return (
-    <div
-      className="absolute bottom-0 left-0 right-0 top-0"
-      onMouseDown={addRipple}
-    >
+    <div className="absolute bottom-0 left-0 right-0 top-0" onClick={addRipple}>
       {rippleArray.length > 0 &&
         rippleArray.map((ripple, index) => {
           return (

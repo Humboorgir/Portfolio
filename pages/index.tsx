@@ -21,10 +21,13 @@ export default function Home() {
   return (
     <>
       {/* hero section  */}
-      <section className="relative flex min-h-screen flex-col items-center">
+      <section
+        id="home"
+        className="relative flex min-h-screen flex-col items-center"
+      >
         <Particles />
         <Navbar />
-        <div className="mt-16 flex items-center justify-center gap-0">
+        <div className="mt-36 flex items-center justify-center gap-0">
           <div
             className="relative flex flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10
              before:h-64 before:w-[min(600px,98vw)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full
@@ -44,7 +47,10 @@ export default function Home() {
       </section>
 
       {/* about section  */}
-      <section className="mb-20 grid min-h-screen place-items-center px-4 pt-16 md:mb-0">
+      <section
+        id="about"
+        className="mb-20 grid min-h-screen place-items-center px-4 pt-16 md:mb-0"
+      >
         {/* description and technologies */}
         <motion.div
           className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
@@ -61,7 +67,10 @@ export default function Home() {
       </section>
 
       {/* projects section  */}
-      <section className="mx-auto mb-10 flex min-h-screen flex-col items-center px-[min(80px,5vw)] pt-12">
+      <section
+        id="projects"
+        className="mx-auto mb-10 flex min-h-screen flex-col items-center px-[min(80px,5vw)] pt-12"
+      >
         <ProjectsTitle />
         <Projects projects={projects} />
       </section>

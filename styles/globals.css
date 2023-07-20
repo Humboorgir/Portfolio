@@ -8,6 +8,10 @@
   --bg-color: #121212;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--fg-color);
   background: var(--bg-color);

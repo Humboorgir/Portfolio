@@ -13,7 +13,7 @@ module.exports = {
 
       keyframes: {
         ripple: {
-          "0%": { opacity: "100%", transform: "scale(0)" },
+          "0%": { opacity: "75%", transform: "scale(0)" },
           "100%": { opacity: "0%", transform: "scale(2)" },
         },
       },

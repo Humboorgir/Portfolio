@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { FaMoon } from "react-icons/fa";
+
 const links = [
   {
     text: "Home",
@@ -17,22 +20,32 @@ const links = [
   },
 ];
 
-import { FaMoon } from "react-icons/fa";
-
 const Navbar = () => {
   return (
     <nav
-      className="fixed z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
+      className="z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
     px-5 md:px-[7%]"
     >
-      <h3 className="col-start-1 col-end-3 mb-2 text-3xl">Iliya</h3>
+      <div className="flex items-center gap-2">
+        <Image
+          className="rounded-full"
+          height={40}
+          width={40}
+          src="/pfp.png"
+          alt="hamburger"
+        />{" "}
+        <h3 className="mb-1 text-2xl">Iliya</h3>
+      </div>
 
       <ul className=" col-start-3 col-end-10 hidden h-[65px] items-center text-lg md:flex">
         {links.map((link) => {
           return (
             <li className="h-full">
               <a
-                className="hover: grid h-full w-24 cursor-pointer place-items-center transition-colors"
+                className="relative grid h-full w-24 cursor-pointer place-items-center overflow-hidden
+                after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0
+                 after:-z-50 after:rounded-lg after:bg-gray-500 after:opacity-0
+                after:duration-300 after:hover:opacity-30"
                 href={link.url}
               >
                 {link.text}
@@ -42,7 +55,10 @@ const Navbar = () => {
         })}
       </ul>
 
-      <button className="col-start-10 col-end-12 flex items-center gap-2 rounded-full  bg-gray-900 px-4 py-3 hover:cursor-pointer">
+      <button
+        className="col-start-10 col-end-12 flex items-center gap-2 rounded-full border-2 border-sky-600 px-4 py-3
+       text-sky-400 hover:cursor-pointer"
+      >
         Theme <FaMoon className="mt-0.5 scale-x-[-1] text-white" />
       </button>
     </nav>

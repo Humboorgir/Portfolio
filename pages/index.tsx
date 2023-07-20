@@ -27,7 +27,7 @@ export default function Home() {
       >
         <Particles />
         <Navbar />
-        <div className="mt-36 flex items-center justify-center gap-0">
+        <div className="mt-[75px] flex items-center justify-center gap-0">
           <div
             className="relative flex flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10
              before:h-64 before:w-[min(600px,98vw)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full

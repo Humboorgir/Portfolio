@@ -23,11 +23,11 @@ export default function Home() {
       {/* hero section  */}
       <section
         id="home"
-        className="relative flex min-h-screen flex-col items-center"
+        className="relative flex min-h-screen flex-col items-center justify-between"
       >
         <Particles />
         <Navbar />
-        <div className="mt-[75px] flex items-center justify-center gap-0">
+        <div className="flex items-center justify-center gap-0">
           <div
             className="relative flex flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10
              before:h-64 before:w-[min(600px,98vw)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full
@@ -43,7 +43,7 @@ export default function Home() {
 
           <HeroProgrammerImage />
         </div>
-        <BsArrowDown className="mt-20 h-16 w-16 animate-bounce opacity-50 md:mb-10 md:mt-auto" />
+        <BsArrowDown className="h-16 w-16 animate-bounce opacity-50 md:mb-10" />
       </section>
 
       {/* about section  */}

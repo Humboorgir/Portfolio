@@ -5,7 +5,7 @@ const Description = () => {
     <motion.p
       initial={{ opacity: 0, x: "100px" }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
       className="max-w-md text-lg leading-snug text-slate-300"
     >
       Hey there! I'm Iliya, a 15 year old high school student and full stack web

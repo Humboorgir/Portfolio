@@ -39,19 +39,9 @@ const Technologies = () => {
       className="mt-16"
     >
       <h2 className="mb-3 text-xl font-bold leading-snug">Technologies:</h2>
-      <div className="flex max-w-sm flex-wrap items-center gap-2">
+      <div className="flex max-w-sm flex-wrap items-center gap-2 text-sky-500">
         {skills.map((skill: string, i) => {
-          return (
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, x: "100px" }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut", delay: i / 20 }}
-              className="text-sky-500"
-            >
-              {skill}
-            </motion.span>
-          );
+          return <span>{skill}</span>;
         })}
       </div>
     </motion.div>

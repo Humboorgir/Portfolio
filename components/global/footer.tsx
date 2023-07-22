@@ -9,8 +9,8 @@ const Footer = () => {
       before:w-full before:translate-x-[-50%] before:translate-y-[-50%]
        before:rounded-3xl before:bg-gray-800 before:blur-[160px]
        before:content-[''] after:absolute after:left-[50%] after:top-0
-           after:h-1 after:w-[min(500px,80vw)] after:translate-x-[-50%] after:rounded-full after:bg-gradient-to-r
-            after:from-zinc-600 after:to-zinc-400 md:px-[20%]"
+       after:h-1 after:w-[min(500px,80vw)] after:translate-x-[-50%] after:rounded-full after:bg-gradient-to-r
+        after:from-zinc-600 after:to-zinc-400 md:px-[20%]"
     >
       {/* logo and copyright statement  */}{" "}
       <p className="mt-3 h-[42px] text-4xl font-bold tracking-wider text-slate-200">

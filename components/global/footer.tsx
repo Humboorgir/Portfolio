@@ -1,11 +1,9 @@
+import { FaGithub, FaDiscord, FaYoutube, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer
-      className="flex flex-col items-center justify-center gap-8 border-t border-t-neutral-700 p-8 px-4 
-    md:flex-row md:px-20"
-    >
+    <footer className="flex flex-col items-center justify-center gap-6 border-t border-t-neutral-700 p-8 px-4 md:px-20">
       {/* logo and copyright statement  */}
       <div className="flex flex-col items-center text-center">
         <Logo />
@@ -15,6 +13,14 @@ const Footer = () => {
         <p className="mt-2 text-sm text-zinc-400">
           Copyright &copy; 2023 - All right reserved
         </p>
+      </div>
+
+      {/* social media links  */}
+      <div className="flex items-center justify-center gap-2 text-3xl">
+        <FaGithub />
+        <FaDiscord />
+        <FaYoutube />
+        <FaInstagram />
       </div>
     </footer>
   );

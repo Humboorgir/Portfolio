@@ -12,6 +12,7 @@ import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
 import Footer from "@/components/global/footer";
+import Head from "next/head";
 
 import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
@@ -20,6 +21,12 @@ import projects from "@/projects.js";
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iliya ~ portfolio</title>
+      </Head>
       {/* hero section  */}
       <section
         id="home"

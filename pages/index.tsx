@@ -25,8 +25,18 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Iliya ~ portfolio</title>
+        <title>Iliya ~ Full stack web developer</title>
+        <meta
+          name="description"
+          content="My personal website, built to showcase my experience in both back end and front end development since early 2020"
+        ></meta>
+        <meta
+          name="keywords"
+          content="Iliya, HTML, CSS, JS, Next.js, React.js, Vue.js, Svelte, Express, SQL, MongoDB, Socket IO , Web developer, Full stack web developer, Web designer, Portfolio, Programmer"
+        ></meta>
+        <meta name="author" content="Iliya"></meta>
       </Head>
+
       {/* hero section  */}
       <section
         id="home"

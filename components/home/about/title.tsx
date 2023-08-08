@@ -6,7 +6,7 @@ const Title = () => {
       initial={{ opacity: 0, x: "100px" }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="text-5xl font-bold leading-snug"
+      className="text-center text-5xl font-bold leading-snug md:text-left"
     >
       About me
     </motion.h2>

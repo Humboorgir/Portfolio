@@ -36,12 +36,15 @@ const Technologies = () => {
       initial={{ opacity: 0, x: "100px" }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
-      className="mt-16"
+      className="mt-16 text-center md:text-left"
     >
-      <h2 className="mb-3 text-xl font-bold leading-snug">Technologies:</h2>
-      <div className="flex max-w-sm flex-wrap items-center gap-2 text-sky-500">
+      <h2 className="mb-3 text-xl font-bold leading-snug">Technologies</h2>
+      <div
+        className="mx-auto flex max-w-sm flex-wrap items-center 
+      justify-center gap-2 text-sky-500 md:justify-start"
+      >
         {skills.map((skill: string, i) => {
-          return <span>{skill}</span>;
+          return <span key={i}>{skill}</span>;
         })}
       </div>
     </motion.div>

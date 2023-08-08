@@ -6,7 +6,7 @@ interface Props {
 
 const Projects = ({ projects }: Props) => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-6">
+    <div className="mx-auto flex flex-wrap items-center justify-center gap-6">
       {projects.map((project, i) => {
         return <Project key={i} delay={i / 8} project={project} />;
       })}

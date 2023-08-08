@@ -84,12 +84,12 @@ export default function Home() {
       </section>
 
       {/* projects section  */}
-      <section
-        id="projects"
-        className="mx-auto mb-10 flex min-h-screen flex-col items-center px-[min(80px,5vw)] pt-12"
-      >
-        <ProjectsTitle />
-        <Projects projects={projects} />
+      <section id="projects" className="mb-10 min-h-screen w-screen pt-12">
+        {/* container  */}
+        <div className="mx-auto flex max-w-5xl flex-col items-center lg:items-start">
+          <ProjectsTitle />
+          <Projects projects={projects} />
+        </div>
       </section>
 
       <Footer />

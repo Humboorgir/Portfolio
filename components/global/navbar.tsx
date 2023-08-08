@@ -1,7 +1,8 @@
-import Ripple from "@/components/global/ripple";
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 import Image from "next/image";
-import { FaMoon } from "react-icons/fa";
 
 const links = [
   {
@@ -23,10 +24,12 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const toggleOpen = () => setOpen(!open);
   return (
     <nav
       className="z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
-    px-[10%] py-5 pb-8 md:px-[7%] md:py-3"
+    px-[10%] py-5 pb-8 md:py-3"
     >
       <div className="flex items-center gap-2">
         <Image
@@ -39,7 +42,7 @@ const Navbar = () => {
         <h3 className="mb-1 text-2xl">Iliya</h3>
       </div>
 
-      <ul className=" col-start-3 col-end-10 hidden h-[65px] items-center text-base md:flex">
+      <ul className="col-start-3 col-end-10 hidden h-[65px] items-center text-base md:flex">
         {links.map((link) => {
           return (
             <li className="h-full">
@@ -57,13 +60,30 @@ const Navbar = () => {
         })}
       </ul>
 
-      <button
-        className="relative col-start-10 col-end-12 flex items-center gap-2 overflow-hidden rounded-full 
-        border-2 border-sky-600 px-4 py-3 text-sky-400 hover:cursor-pointer"
-      >
-        Theme <FaMoon className="mt-0.5 scale-x-[-1] text-white" />
-        <Ripple />
-      </button>
+      <div className="col-start-10 col-end-12 flex items-center justify-end md:hidden">
+        <FaBars onClick={toggleOpen} className="cursor-pointer text-4xl" />
+        <ul
+          className={`animate-sidebarReveal absolute right-0 top-0 flex h-screen w-[50vw] translate-x-[50vw] flex-col
+           items-center gap-8 bg-sky-900/40 py-5 backdrop-blur-lg transition-all duration-300 
+           ease-in-out ${open && "!translate-x-0"}`}
+        >
+          <li className="w-full">
+            <AiOutlineClose
+              className="ml-auto mr-[7%] cursor-pointer text-3xl"
+              onClick={toggleOpen}
+            />
+          </li>
+          {links.map((link) => {
+            return (
+              <li>
+                <a className="cursor-pointer text-center" href={link.url}>
+                  {link.text}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </nav>
   );
 };

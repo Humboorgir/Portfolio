@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className="z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
-    px-5 py-3 md:px-[7%]"
+    px-[10%] py-5 pb-8 md:px-[7%] md:py-3"
     >
       <div className="flex items-center gap-2">
         <Image

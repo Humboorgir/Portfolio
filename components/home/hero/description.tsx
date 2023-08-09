@@ -5,8 +5,7 @@ const Description = () => {
     sm:max-w-[350px] "
     >
       Every great project starts with an idea. Whether it's a startup, a small
-      business, or a personal project and I'm here to help bring those ideas to
-      life
+      business, or a personal project and I'm here to bring those ideas to life
     </p>
   );
 };

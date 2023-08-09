@@ -32,6 +32,7 @@ const Navbar = () => {
       className="z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
     px-[10%] py-5 pb-8 md:py-3"
     >
+      {/* logo and brand name (using a template for now since i dont have an actual logo) */}
       <div className="flex items-center gap-2">
         <Image
           className="rounded-full"
@@ -43,6 +44,7 @@ const Navbar = () => {
         <h3 className="mb-1 text-2xl">Iliya</h3>
       </div>
 
+      {/* links  */}
       <ul className="col-start-3 col-end-10 hidden h-[65px] items-center text-base md:flex">
         {links.map((link) => {
           return (
@@ -61,6 +63,7 @@ const Navbar = () => {
         })}
       </ul>
 
+      {/* discord link */}
       <a
         href="https://discord.gg/26ENr5ReWB"
         className="relative col-start-10 col-end-12 hidden items-center 
@@ -72,6 +75,7 @@ const Navbar = () => {
         <Ripple />
       </a>
 
+      {/* hidden on large screens  */}
       <Drawer links={links} toggleOpen={toggleOpen} open={open} />
     </nav>
   );

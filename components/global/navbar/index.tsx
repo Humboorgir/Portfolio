@@ -1,5 +1,6 @@
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import Drawer from "@/components/global/navbar/drawer";
+import Ripple from "@/components/global/ripple";
+import { FaDiscord } from "react-icons/fa";
 import { useState } from "react";
 
 import Image from "next/image";
@@ -60,30 +61,18 @@ const Navbar = () => {
         })}
       </ul>
 
-      <div className="col-start-10 col-end-12 flex items-center justify-end md:hidden">
-        <FaBars onClick={toggleOpen} className="cursor-pointer text-4xl" />
-        <ul
-          className={`animate-sidebarReveal absolute right-0 top-0 flex h-screen w-[50vw] translate-x-[50vw] flex-col
-           items-center gap-8 bg-sky-900/40 py-5 backdrop-blur-lg transition-all duration-300 
-           ease-in-out ${open && "!translate-x-0"}`}
-        >
-          <li className="w-full">
-            <AiOutlineClose
-              className="ml-auto mr-[7%] cursor-pointer text-3xl"
-              onClick={toggleOpen}
-            />
-          </li>
-          {links.map((link) => {
-            return (
-              <li>
-                <a className="cursor-pointer text-center" href={link.url}>
-                  {link.text}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <a
+        href="https://discord.gg/26ENr5ReWB"
+        className="relative col-start-10 col-end-12 hidden items-center 
+        overflow-hidden rounded-lg border-2 border-sky-600 px-3 py-2 text-sky-400 
+        md:flex"
+        target="_blank"
+      >
+        <FaDiscord className="mr-2 text-xl" /> Discord
+        <Ripple />
+      </a>
+
+      <Drawer links={links} toggleOpen={toggleOpen} open={open} />
     </nav>
   );
 };

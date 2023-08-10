@@ -13,6 +13,7 @@ const Project = ({ project, delay }: Props) => {
       initial={{ opacity: 0, x: "100px" }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut", delay: delay }}
+      viewport={{ once: true }}
       className="flex w-80 flex-col items-center gap-2 rounded-lg border-2
      border-neutral-800 bg-neutral-900 p-5"
     >

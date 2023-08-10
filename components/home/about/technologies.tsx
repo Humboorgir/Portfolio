@@ -36,6 +36,7 @@ const Technologies = () => {
       initial={{ opacity: 0, x: "100px" }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+      viewport={{ once: true }}
       className="mt-16 text-center md:text-left"
     >
       <h2 className="mb-3 text-xl font-bold leading-snug">Technologies</h2>

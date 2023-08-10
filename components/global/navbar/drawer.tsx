@@ -14,14 +14,14 @@ interface Props {
 
 const Drawer = ({ open, toggleOpen, links }: Props) => {
   return (
-    <div className="col-start-10 col-end-12 flex items-center justify-end md:hidden">
+    <div className="col-start-10 col-end-12 flex items-center justify-end overflow-hidden md:hidden">
       <FaBars onClick={toggleOpen} className="cursor-pointer text-4xl" />
 
       {/* content of the drawer (hidden when open is not true) */}
       <ul
         className={`absolute right-0 top-0 flex h-screen w-[50vw] translate-x-[50vw] flex-col
-     items-center bg-sky-900/40 py-5 backdrop-blur-lg transition-all duration-300 
-     ease-in-out ${open && "!translate-x-0"}`}
+     items-center bg-sky-900/40 py-5 opacity-0 backdrop-blur-lg transition-all 
+     duration-300 ease-in-out ${open && "!translate-x-0 !opacity-100"}`}
       >
         {/* close button  */}
         <li className="w-full">

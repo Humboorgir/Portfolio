@@ -10,6 +10,7 @@ const PersonalInfo = () => {
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
+        viewport={{ once: true }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Name:</span>
@@ -20,6 +21,7 @@ const PersonalInfo = () => {
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+        viewport={{ once: true }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Date of birth:</span>
@@ -30,6 +32,7 @@ const PersonalInfo = () => {
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+        viewport={{ once: true }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Experience:</span>
@@ -40,6 +43,7 @@ const PersonalInfo = () => {
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
+        viewport={{ once: true }}
         className="flex flex-col"
       >
         <span className="text-slate-300">Location:</span>

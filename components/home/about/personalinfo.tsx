@@ -9,7 +9,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
         viewport={{ once: true }}
         className="flex flex-col"
       >
@@ -20,7 +20,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
         viewport={{ once: true }}
         className="flex flex-col"
       >
@@ -31,7 +31,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.8 }}
         viewport={{ once: true }}
         className="flex flex-col"
       >
@@ -42,7 +42,7 @@ const PersonalInfo = () => {
       <motion.div
         initial={{ opacity: 0, x: "100px" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 1 }}
         viewport={{ once: true }}
         className="flex flex-col"
       >

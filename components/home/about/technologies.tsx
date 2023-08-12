@@ -33,9 +33,9 @@ const skills = [
 const Technologies = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: "100px" }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+      initial={{ opacity: 0, y: "50px" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
       viewport={{ once: true }}
       className="mt-16 text-center md:text-left"
     >

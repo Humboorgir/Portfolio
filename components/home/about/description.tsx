@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const Description = () => {
   return (
     <motion.p
-      initial={{ opacity: 0, x: "100px" }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+      initial={{ opacity: 0, y: "50px" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
       viewport={{ once: true }}
       className="max-w-md text-center text-lg leading-snug text-slate-300 md:text-left"
     >

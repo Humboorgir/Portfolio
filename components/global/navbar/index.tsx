@@ -28,10 +28,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const toggleOpen = () => setOpen(!open);
   return (
-    <nav
-      className="z-20 grid h-[70px] w-full grid-cols-11 place-items-center
-    px-[10%] py-5 pb-8 md:py-3"
-    >
+    <nav className="z-20 flex min-h-[70px] items-center justify-between py-5 pb-8 md:py-3">
       {/* logo and brand name (using a template for now since i dont have an actual logo) */}
       <div className="flex items-center gap-2">
         <Image
@@ -45,15 +42,15 @@ const Navbar = () => {
       </div>
 
       {/* links  */}
-      <ul className="col-start-3 col-end-10 hidden h-[65px] items-center text-base md:flex">
+      <ul className="hidden h-[65px] items-center text-base md:flex">
         {links.map((link) => {
           return (
             <li className="h-full">
               <a
-                className="relative grid h-full w-24 cursor-pointer place-items-center overflow-hidden
-                after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0
-                 after:-z-50 after:rounded-lg after:bg-gray-500 after:opacity-0
-                after:duration-300 after:hover:opacity-30"
+                className="relative grid h-full w-20 cursor-pointer place-items-center overflow-hidden after:absolute
+                after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-50
+                 after:rounded-lg after:bg-gray-500 after:opacity-0 after:duration-300
+                after:hover:opacity-30 lg:w-24"
                 href={link.url}
               >
                 {link.text}

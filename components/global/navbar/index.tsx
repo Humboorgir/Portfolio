@@ -29,7 +29,7 @@ const Navbar = () => {
   const toggleOpen = () => setOpen(!open);
   return (
     <nav
-      className="z-20 grid h-[70px] w-screen grid-cols-11 place-items-center
+      className="z-20 grid h-[70px] w-full grid-cols-11 place-items-center
     px-[10%] py-5 pb-8 md:py-3"
     >
       {/* logo and brand name (using a template for now since i dont have an actual logo) */}

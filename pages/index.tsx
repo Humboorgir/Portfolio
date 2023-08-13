@@ -1,4 +1,5 @@
 import Navbar from "@/components/global/navbar";
+import Container from "@/components/global/container";
 import Particles from "@/components/global/particles";
 import HeroTitle from "@/components/home/hero/title";
 import HeroDescription from "@/components/home/hero/description";
@@ -38,29 +39,29 @@ export default function Home() {
       </Head>
 
       {/* hero section  */}
-      <section
-        id="home"
-        className="relative flex min-h-screen flex-col items-center justify-between"
-      >
-        <Particles />
-        <Navbar />
-        <div className="flex items-center justify-center gap-0 py-8 md:py-12">
-          <div
-            className="relative flex flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10
-             before:h-64 before:w-[min(600px,98vw)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full
-             before:bg-gray-800 before:blur-[120px] before:content-[''] md:items-start"
-          >
-            <HeroTitle />
-            <HeroDescription />
-            <div className="flex flex-col items-center gap-3 md:flex-row">
-              <HeroAboutButton />
-              <HeroContactButton />
+      <section id="home">
+        <Container className="flex min-h-screen flex-col justify-between">
+          <Navbar />
+          <Particles />
+          {/* hero title, description, image & buttons  */}
+          <div className="flex items-center justify-center py-8 md:py-12">
+            <div
+              className="relative flex w-[75%] flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10 before:h-64 before:w-[min(600px,98vw)]
+             before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full before:bg-gray-800 before:blur-[120px]
+             before:content-[''] md:w-[65%] lg:w-fit lg:items-start"
+            >
+              <HeroTitle />
+              <HeroDescription />
+              <div className="flex w-full flex-col items-center gap-3 lg:flex-row">
+                <HeroAboutButton />
+                <HeroContactButton />
+              </div>
             </div>
-          </div>
 
-          <HeroProgrammerImage />
-        </div>
-        <BsArrowDown className="mt-14 h-16 w-16 animate-bounce opacity-50 md:mb-8" />
+            <HeroProgrammerImage />
+          </div>
+          <BsArrowDown className="mx-auto mt-14 h-16 w-16 animate-bounce opacity-50 md:mb-8" />
+        </Container>
       </section>
 
       {/* about section  */}
@@ -72,7 +73,7 @@ export default function Home() {
         <motion.div
           className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
            before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
-            before:bg-gray-800 before:blur-[120px] before:content-[''] md:flex-row md:gap-12"
+            before:bg-gray-800 before:blur-[120px] before:content-[''] md:gap-12 lg:flex-row"
         >
           <div>
             <AboutTitle />

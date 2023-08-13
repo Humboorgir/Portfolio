@@ -65,32 +65,30 @@ export default function Home() {
       </section>
 
       {/* about section  */}
-      <section
-        id="about"
-        className="mb-20 grid min-h-screen place-items-center px-4 pt-16 md:mb-0"
-      >
-        {/* description and technologies */}
-        <motion.div
-          className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
+      <section id="about">
+        <Container className="mb-20 grid min-h-screen place-items-center pt-16 md:mb-0">
+          {/* description and technologies */}
+          <motion.div
+            className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
            before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
             before:bg-gray-800 before:blur-[120px] before:content-[''] md:gap-12 lg:flex-row"
-        >
-          <div>
-            <AboutTitle />
-            <AboutDescription />
-          </div>
-          <AboutTechnologies />
-        </motion.div>
-        <AboutPersonalInfo />
+          >
+            <div>
+              <AboutTitle />
+              <AboutDescription />
+            </div>
+            <AboutTechnologies />
+          </motion.div>
+          <AboutPersonalInfo />
+        </Container>
       </section>
 
       {/* projects section  */}
-      <section id="projects" className="mb-10 min-h-screen w-screen pt-12">
-        {/* container  */}
-        <div className="mx-auto flex max-w-5xl flex-col items-center lg:items-start">
+      <section id="projects">
+        <Container className="flex min-h-screen max-w-5xl flex-col items-center pt-24 xl:items-start">
           <ProjectsTitle />
           <Projects projects={projects} />
-        </div>
+        </Container>
       </section>
 
       <Footer />

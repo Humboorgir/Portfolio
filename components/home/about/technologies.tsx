@@ -37,13 +37,12 @@ const Technologies = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
       viewport={{ once: true }}
-      className="mt-16 text-center md:text-left"
+      className="mt-12 w-full lg:mt-16 lg:max-w-sm"
     >
-      <h2 className="mb-3 text-xl font-bold leading-snug">Technologies</h2>
-      <div
-        className="mx-auto flex max-w-sm flex-wrap items-center 
-      justify-center gap-2 text-sky-500 md:justify-start"
-      >
+      <h2 className="mx-auto mb-3 text-xl font-bold leading-snug">
+        Technologies
+      </h2>
+      <div className="mx-auto flex flex-wrap items-center justify-start gap-2 text-sky-500">
         {skills.map((skill: string, i) => {
           return <span key={i}>{skill}</span>;
         })}

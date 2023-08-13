@@ -69,9 +69,10 @@ export default function Home() {
         <Container className="mb-20 grid min-h-screen place-items-center pt-16 md:mb-0">
           {/* description and technologies */}
           <motion.div
-            className="relative flex flex-col before:absolute before:left-[50%] before:top-[50%] before:-z-10
-           before:h-[calc(100%+50px)] before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
-            before:bg-gray-800 before:blur-[120px] before:content-[''] md:gap-12 lg:flex-row"
+            className="relative flex flex-col items-start justify-center before:absolute 
+            before:left-[50%] before:top-[50%] before:-z-10 before:h-[calc(100%+50px)] 
+            before:w-[calc(100%+50px)] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl
+           before:bg-gray-800 before:blur-[120px] before:content-[''] md:gap-12 lg:flex-row"
           >
             <div>
               <AboutTitle />

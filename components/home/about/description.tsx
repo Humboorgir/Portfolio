@@ -7,7 +7,7 @@ const Description = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
       viewport={{ once: true }}
-      className="max-w-md text-center text-lg leading-snug text-slate-300 md:text-left"
+      className="text-lg leading-snug text-slate-300 lg:max-w-md"
     >
       Hey there! I'm Iliya, a 15 year old high school student and full stack web
       developer from Iran. I've been programming since early 2020 or in other

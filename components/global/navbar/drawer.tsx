@@ -1,6 +1,4 @@
-import { AiOutlineClose } from "react-icons/ai";
-import { FaDiscord, FaBars } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { FaBars } from "react-icons/fa";
 
 interface Link {
   text: string;

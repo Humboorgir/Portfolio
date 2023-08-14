@@ -1,5 +1,6 @@
 import { AiOutlineClose } from "react-icons/ai";
 import { FaDiscord, FaBars } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface Link {
   text: string;
@@ -19,24 +20,18 @@ const Drawer = ({ open, toggleOpen, links }: Props) => {
 
       {/* content of the drawer (hidden when open is not true) */}
       <ul
-        className={`absolute right-0 top-0 flex h-screen w-[50vw] translate-x-[50vw] flex-col
-     items-center bg-sky-900/40 py-5 opacity-0 backdrop-blur-lg transition-all 
-     duration-300 ease-in-out ${open && "!translate-x-0 !opacity-100"}`}
+        className={`absolute right-[9%] top-[13%] flex w-max origin-top-right
+        scale-0 flex-col items-center rounded-lg bg-gray-800 py-1
+        opacity-0 duration-[250ms] ease-out ${
+          open && "!scale-100 !opacity-100"
+        }`}
       >
-        {/* close button  */}
-        <li className="w-full">
-          <AiOutlineClose
-            className="ml-auto mr-[7%] cursor-pointer text-3xl"
-            onClick={toggleOpen}
-          />
-        </li>
-
         {/* links  */}
         {links.map((link) => {
           return (
-            <li className="mb-6">
+            <li className="w-full rounded-lg py-3 hover:bg-gray-700">
               <a
-                className="cursor-pointer text-center"
+                className="h-full w-full cursor-pointer px-8 py-3 text-center"
                 onClick={toggleOpen}
                 href={link.url}
               >
@@ -47,8 +42,12 @@ const Drawer = ({ open, toggleOpen, links }: Props) => {
         })}
 
         {/* discord  */}
-        <li>
-          <a target="_blank" href="https://discord.gg/26ENr5ReWB">
+        <li className="w-full rounded-lg px-8 py-3 hover:bg-gray-700">
+          <a
+            className="h-full w-full"
+            target="_blank"
+            href="https://discord.gg/26ENr5ReWB"
+          >
             Discord
           </a>
         </li>

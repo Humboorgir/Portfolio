@@ -1,5 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import Ripple from "@/components/global/ripple";
+import { motion } from "framer-motion";
 
 interface Link {
   text: string;
@@ -25,14 +26,21 @@ const HamburgerMenu = ({ open, toggleOpen, links }: Props) => {
 
       {/* content of the hamburger menu (hidden when open is not true) */}
       <ul
-        className={`absolute right-0 top-[calc(100%+4px)] flex w-max origin-top-right
-        scale-[0.85] flex-col items-center rounded-lg bg-gray-800 py-1
-        opacity-0 duration-150 ease-out ${open && "!scale-100 !opacity-100"}`}
+        className={`absolute right-0 top-[calc(100%+4px)] flex w-max origin-top-right scale-[0.85] 
+        flex-col items-center rounded-lg bg-gray-800 py-1 opacity-0 duration-150 ease-out
+         ${open && "!scale-100 !opacity-100"}`}
       >
         {/* links  */}
-        {links.map((link) => {
+        {links.map((link, i) => {
+          i++;
           return (
-            <li className="w-full rounded-lg py-3 hover:bg-gray-700">
+            <motion.li
+              initial={{ opacity: 0, scale: 0.8 }}
+              className={`w-full rounded-lg py-3 transition-all
+              duration-300 ease-out hover:bg-gray-700 
+              ${open && "!scale-100 !opacity-100"}`}
+              style={{ transitionDelay: `${i / 20}s` }}
+            >
               <a
                 className="h-full w-full cursor-pointer px-8 py-3 text-center"
                 onClick={toggleOpen}
@@ -40,12 +48,18 @@ const HamburgerMenu = ({ open, toggleOpen, links }: Props) => {
               >
                 {link.text}
               </a>
-            </li>
+            </motion.li>
           );
         })}
 
         {/* discord  */}
-        <li className="w-full rounded-lg px-8 py-3 hover:bg-gray-700">
+        <motion.li
+          initial={{ opacity: 0, scale: 0.8 }}
+          className={`w-full rounded-lg px-8 py-3 transition-all
+          duration-300 ease-out hover:bg-gray-700 
+          ${open && "!scale-100 !opacity-100"}`}
+          style={{ transitionDelay: `${links.length / 20}s` }}
+        >
           <a
             className="h-full w-full"
             target="_blank"
@@ -53,7 +67,7 @@ const HamburgerMenu = ({ open, toggleOpen, links }: Props) => {
           >
             Discord
           </a>
-        </li>
+        </motion.li>
       </ul>
     </div>
   );

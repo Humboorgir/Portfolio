@@ -1,4 +1,4 @@
-import Drawer from "@/components/global/navbar/dropdown";
+import HamburgerMenu from "@/components/global/navbar/hamburgermenu";
 import Ripple from "@/components/global/ripple";
 import { FaDiscord } from "react-icons/fa";
 import { useState } from "react";
@@ -73,7 +73,7 @@ const Navbar = () => {
       </a>
 
       {/* hidden on large screens  */}
-      <Drawer links={links} toggleOpen={toggleOpen} open={open} />
+      <HamburgerMenu links={links} toggleOpen={toggleOpen} open={open} />
     </nav>
   );
 };

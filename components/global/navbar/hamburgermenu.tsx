@@ -12,7 +12,7 @@ interface Props {
   links: Link[];
 }
 
-const DropDown = ({ open, toggleOpen, links }: Props) => {
+const HamburgerMenu = ({ open, toggleOpen, links }: Props) => {
   return (
     <div className="relative col-start-10 col-end-12 flex items-center justify-end md:hidden">
       <div
@@ -23,7 +23,7 @@ const DropDown = ({ open, toggleOpen, links }: Props) => {
         <Ripple fast={true} />
       </div>
 
-      {/* content of the drop down (hidden when open is not true) */}
+      {/* content of the hamburger menu (hidden when open is not true) */}
       <ul
         className={`absolute right-0 top-[calc(100%+4px)] flex w-max origin-top-right
         scale-[0.85] flex-col items-center rounded-lg bg-gray-800 py-1
@@ -59,4 +59,4 @@ const DropDown = ({ open, toggleOpen, links }: Props) => {
   );
 };
 
-export default DropDown;
+export default HamburgerMenu;

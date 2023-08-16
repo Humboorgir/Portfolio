@@ -44,7 +44,7 @@ export default function Home() {
           <Navbar />
           <Particles />
           {/* hero title, description, image & buttons  */}
-          <div className="flex items-center justify-center py-8 md:py-12">
+          <div className="flex items-center justify-center py-3 md:py-12">
             <div
               className="relative flex w-[75%] flex-col items-center before:absolute before:left-[50%] before:top-[50%] before:-z-10 before:h-64 before:w-[min(600px,98vw)]
              before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full before:bg-gray-800 before:blur-[120px]
@@ -60,7 +60,7 @@ export default function Home() {
 
             <HeroProgrammerImage />
           </div>
-          <BsArrowDown className="mx-auto mt-14 h-16 w-16 animate-bounce opacity-50 md:mb-8" />
+          <BsArrowDown className="mx-auto mt-7 h-16 w-16 animate-bounce opacity-50 md:mb-8 md:mt-14" />
         </Container>
       </section>
 

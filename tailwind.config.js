@@ -9,12 +9,13 @@ module.exports = {
     extend: {
       animation: {
         ripple: "ripple 600ms linear",
+        rippleFast: "ripple 450ms linear",
       },
 
       keyframes: {
         ripple: {
-          "0%": { opacity: "75%", transform: "scale(0)" },
-          "100%": { opacity: "0%", transform: "scale(2)" },
+          "0%": { opacity: "60%", transform: "scale(0)" },
+          "100%": { opacity: "0%", transform: "scale(3)" },
         },
       },
 

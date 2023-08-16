@@ -20,7 +20,12 @@ const useDebouncedRippleCleanUp = (
   }, [rippleCount, duration, cleanUpFunction]);
 };
 
-const Ripple = ({ duration = 600 }) => {
+interface Props {
+  duration?: number;
+  fast?: boolean;
+}
+
+const Ripple = ({ duration = 600, fast }: Props) => {
   interface Ripple {
     y: number;
     x: number;
@@ -56,7 +61,9 @@ const Ripple = ({ duration = 600 }) => {
         rippleArray.map((ripple, index) => {
           return (
             <span
-              className="absolute scale-0 animate-ripple rounded-full bg-slate-200 opacity-75"
+              className={`absolute scale-0 ${
+                fast ? "animate-rippleFast" : "animate-ripple"
+              } rounded-full bg-slate-200 opacity-75`}
               key={"span" + index}
               style={{
                 top: ripple.y,

@@ -1,4 +1,4 @@
-import Drawer from "@/components/global/navbar/drawer";
+import Drawer from "@/components/global/navbar/dropdown";
 import Ripple from "@/components/global/ripple";
 import { FaDiscord } from "react-icons/fa";
 import { useState } from "react";

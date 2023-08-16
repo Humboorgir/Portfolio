@@ -3,9 +3,8 @@ import { motion } from "framer-motion";
 const PersonalInfo = () => {
   return (
     <div
-      className="mt-20 grid w-full max-w-md grid-cols-2 place-items-start gap-8 md:max-w-4xl 
-      md:grid-cols-4 md:place-items-center
-      lg:mt-0"
+      className="mt-20 grid w-full max-w-md grid-cols-2 place-items-start gap-8 overflow-hidden 
+      md:max-w-4xl md:grid-cols-4 md:place-items-center lg:mt-0"
     >
       <motion.div
         initial={{ opacity: 0, x: "100px" }}

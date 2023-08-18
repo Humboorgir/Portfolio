@@ -40,18 +40,21 @@ const Ripple = ({ duration = 600, fast }: Props) => {
 
   const addRipple = (event: any) => {
     const rippleContainer = event.currentTarget.getBoundingClientRect();
+    const scrollX = window.pageXOffset;
+    const scrollY = window.pageYOffset;
     const size =
       rippleContainer.width > rippleContainer.height
         ? rippleContainer.width
         : rippleContainer.height;
-    const x = event.pageX - rippleContainer.x - size / 2;
-    const y = event.pageY - rippleContainer.y - size / 2;
+    const x = event.pageX - rippleContainer.x - scrollX - size / 2;
+    const y = event.pageY - rippleContainer.y - scrollY - size / 2;
     const newRipple = {
       x,
       y,
       size,
     };
 
+    console.log(newRipple.y);
     setRippleArray([...rippleArray, newRipple]);
   };
 
@@ -59,6 +62,7 @@ const Ripple = ({ duration = 600, fast }: Props) => {
     <div className="absolute bottom-0 left-0 right-0 top-0" onClick={addRipple}>
       {rippleArray.length > 0 &&
         rippleArray.map((ripple, index) => {
+          console.log(ripple);
           return (
             <span
               className={`absolute scale-0 ${

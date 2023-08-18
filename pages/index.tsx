@@ -12,9 +12,10 @@ import AboutTechnologies from "@/components/home/about/technologies";
 import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
+import ContactBox from "@/components/home/contact/contactbox";
 import Footer from "@/components/global/footer";
 import Head from "next/head";
-
+import Button from "@/components/global/button";
 import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import projects from "@/projects.js";
@@ -40,7 +41,7 @@ export default function Home() {
 
       {/* hero section  */}
       <section id="home">
-        <Container className="flex min-h-screen flex-col justify-between">
+        <Container className="flex min-h-[100svh] flex-col justify-between">
           <Navbar />
           <Particles />
           {/* hero title, description, image & buttons  */}
@@ -86,12 +87,18 @@ export default function Home() {
 
       {/* projects section  */}
       <section id="projects">
-        <Container className="flex min-h-screen max-w-5xl flex-col items-center pt-24 xl:items-start">
+        <Container className="mt-24 flex min-h-screen max-w-5xl flex-col items-center xl:items-start">
           <ProjectsTitle />
           <Projects projects={projects} />
         </Container>
       </section>
 
+      {/* contact section  */}
+      <section id="contact">
+        <Container className="mt-24 flex min-h-screen flex-col items-center">
+          <ContactBox />
+        </Container>
+      </section>
       <Footer />
     </>
   );

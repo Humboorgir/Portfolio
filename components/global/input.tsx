@@ -5,12 +5,14 @@ interface Props {
   className?: string;
   placeholder?: string;
   textarea?: boolean;
+  required?: boolean;
 }
 const input = ({
   type = "text",
   className,
   placeholder = "",
   textarea = false,
+  required = false,
 }: Props) => {
   if (textarea)
     return (
@@ -19,6 +21,7 @@ const input = ({
         py-2 focus:outline-double focus:outline-2 focus:outline-neutral-700
       ${className}`}
         placeholder={placeholder}
+        required={required}
       />
     );
   return (
@@ -28,6 +31,7 @@ const input = ({
   ${className}`}
       type={type}
       placeholder={placeholder}
+      required={required}
     />
   );
 };

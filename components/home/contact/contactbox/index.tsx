@@ -1,6 +1,6 @@
-import Button from "@/components/global/button";
+import Title from "@/components/home/contact/contactbox/title";
 import Input from "@/components/global/input";
-import Title from "@/components/home/contact/title";
+import Button from "@/components/global/button";
 
 import { MdOutlineLaunch as LaunchIcon } from "react-icons/md";
 const ContactBox = () => {

@@ -15,8 +15,8 @@ const input = ({
   if (textarea)
     return (
       <textarea
-        className={`flex items-start rounded-md border border-neutral-800 bg-[#0f0f0f] px-3 py-2
-        focus:outline-double focus:outline-2 focus:outline-neutral-700
+        className={`flex resize-none items-start rounded-md border border-neutral-800 bg-[#0f0f0f] px-3
+        py-2 focus:outline-double focus:outline-2 focus:outline-neutral-700
       ${className}`}
         placeholder={placeholder}
       />

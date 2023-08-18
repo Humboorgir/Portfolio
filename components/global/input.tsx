@@ -6,6 +6,7 @@ interface Props {
   placeholder?: string;
   textarea?: boolean;
   required?: boolean;
+  name?: string;
 }
 const input = ({
   type = "text",
@@ -13,6 +14,7 @@ const input = ({
   placeholder = "",
   textarea = false,
   required = false,
+  name,
 }: Props) => {
   if (textarea)
     return (
@@ -22,10 +24,13 @@ const input = ({
       ${className}`}
         placeholder={placeholder}
         required={required}
+        name={name}
       />
     );
   return (
     <input
+      name={name}
+      id={name}
       className={`flex items-start rounded-md border border-neutral-800 bg-[#0f0f0f] px-3 py-2
        focus:outline-double focus:outline-2 focus:outline-neutral-700
   ${className}`}

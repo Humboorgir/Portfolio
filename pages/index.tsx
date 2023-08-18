@@ -97,10 +97,8 @@ export default function Home() {
       {/* contact section  */}
       <section id="contact">
         <Container className="mt-32 flex min-h-[70vh] !w-[800px] !max-w-[90vw] flex-col">
-          <div>
-            <ContactTitle />
-            <ContactDescription />
-          </div>
+          <ContactTitle />
+          <ContactDescription />
           <ContactBox />
         </Container>
       </section>

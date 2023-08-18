@@ -13,9 +13,10 @@ import AboutPersonalInfo from "@/components/home/about/personalinfo";
 import ProjectsTitle from "@/components/home/projects/title";
 import Projects from "@/components/home/projects/projects";
 import ContactBox from "@/components/home/contact/contactbox";
+import ContactTitle from "@/components/home/contact/title";
+import ContactDescription from "@/components/home/contact/description";
 import Footer from "@/components/global/footer";
 import Head from "next/head";
-import Button from "@/components/global/button";
 import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import projects from "@/projects.js";
@@ -95,7 +96,11 @@ export default function Home() {
 
       {/* contact section  */}
       <section id="contact">
-        <Container className="mt-24 flex min-h-screen flex-col items-center">
+        <Container className="mt-32 flex min-h-[70vh] !w-[800px] !max-w-[90vw] flex-col">
+          <div>
+            <ContactTitle />
+            <ContactDescription />
+          </div>
           <ContactBox />
         </Container>
       </section>

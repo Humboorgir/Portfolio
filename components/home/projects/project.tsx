@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "@/components/global/button";
 import { motion } from "framer-motion";
+import { MdOutlineLaunch as LaunchIcon } from "react-icons/md";
 
 interface Props {
   project: Project;
@@ -31,9 +32,9 @@ const Project = ({ project, delay }: Props) => {
       <Link
         variant="blue"
         href="/somewebsite.com"
-        className="!flex !w-full !justify-center !rounded-full !py-2"
+        className="!flex !w-full !items-center !justify-center !rounded-lg !py-2"
       >
-        Repository
+        Repository <LaunchIcon />
       </Link>
     </motion.div>
   );

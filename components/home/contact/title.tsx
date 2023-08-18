@@ -1,6 +1,8 @@
 const Title = () => {
   return (
-    <h2 className="ml-3 text-3xl font-bold">Interested in working together?</h2>
+    <h2 className="font-bol ml-3 text-xl md:text-3xl">
+      Interested in working together?
+    </h2>
   );
 };
 

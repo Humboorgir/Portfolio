@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 
 import Ripple from "@/components/global/ripple";
-import Link from "next/link";
 
 interface Props {
+  type?: "submit" | "button" | "reset";
   variant: "blue" | "violet";
   href?: string;
   children: ReactNode;
@@ -11,7 +11,7 @@ interface Props {
   className?: string;
 }
 
-const Button = ({ variant, href, children, className }: Props) => {
+const Button = ({ variant, href, children, className, type }: Props) => {
   const bgStyle =
     variant === "blue"
       ? "bg-gradient-to-br from-primary to-sky-800"
@@ -19,6 +19,7 @@ const Button = ({ variant, href, children, className }: Props) => {
   if (!href)
     return (
       <button
+        type={type}
         className={`relative flex w-fit cursor-pointer items-center justify-center
          gap-2 overflow-hidden rounded-lg px-4 py-3 ${bgStyle} ${className}`}
       >

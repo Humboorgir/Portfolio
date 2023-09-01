@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 const Title = () => {
   return (
-    <h2 className="font-bol ml-3 text-xl md:text-3xl">
+    <motion.h2
+      initial={{ opacity: 0, y: "50px" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      className="ml-3 text-xl md:text-3xl"
+    >
       Interested in working together?
-    </h2>
+    </motion.h2>
   );
 };
 

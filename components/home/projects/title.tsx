@@ -4,11 +4,11 @@ const Title = () => {
   return (
     <div
       className="relative before:absolute before:left-[50%]
-      before:top-[50%] before:-z-10 before:-mt-4 before:h-full before:w-[calc(100%+50px)]
-       before:max-w-[100vw] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl before:bg-gray-700/80
-       before:blur-2xl before:content-[''] md:before:ml-2 md:before:bg-gray-700"
+      before:top-[50%] before:-z-10 before:-mt-4 before:h-full before:w-full before:max-w-[100vw]
+       before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-3xl before:bg-gray-700/80 before:blur-2xl
+       before:content-[''] md:before:ml-2 md:before:w-[calc(100%+50px)] md:before:bg-gray-700"
     >
-      <div className="max-w-[100vw] overflow-hidden">
+      <div className="w-full overflow-hidden md:w-[calc(100%+100px)]">
         <motion.h2
           initial={{ opacity: 0, x: "50px" }}
           whileInView={{ opacity: 1, x: 0 }}

@@ -7,9 +7,9 @@ const Description = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
       viewport={{ once: true }}
-      className="mb-8 ml-3 text-base text-neutral-400 md:text-lg"
+      className="mb-8 ml-3 text-sm text-neutral-400 md:text-lg"
     >
-      Let's talk! Send me an email to discuss further
+      Let's talk! Send me a message to discuss further
     </motion.p>
   );
 };

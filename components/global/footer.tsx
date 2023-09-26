@@ -27,7 +27,7 @@ const Footer = () => {
         <h3 className="font-bold text-slate-300">Helpful links</h3>
       </div>
       <p className="mt-4 text-sm text-zinc-400">
-        Copyright &copy; 2023 - All right reserved
+        Copyright &copy; 2023 - All rights reserved
       </p>
     </footer>
   );

@@ -1,7 +1,29 @@
 import { FaGithub, FaDiscord, FaYoutube, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
+import type { Url } from "next/dist/shared/lib/router/router";
+import type { ReactElement } from "react";
 
 const Footer = () => {
+  type Link = { href: Url; icon: ReactElement };
+  const links: Link[] = [
+    {
+      href: "https://github.com/humboorgir",
+      icon: <FaGithub />,
+    },
+    {
+      href: "https://discord.gg/26ENr5ReWB",
+      icon: <FaDiscord />,
+    },
+    {
+      href: "https://www.youtube.com/@humboorgir",
+      icon: <FaYoutube />,
+    },
+    {
+      href: "https://www.instagram.com/humboorgir/",
+      icon: <FaInstagram />,
+    },
+  ];
   return (
     <footer
       className="relative mt-52 flex flex-col items-center justify-center p-8 px-4 
@@ -19,10 +41,9 @@ const Footer = () => {
       {/* social media links  */}
       <div className="mt-4 flex flex-col gap-2">
         <div className="flex items-center justify-center gap-2 text-3xl">
-          <FaGithub />
-          <FaDiscord />
-          <FaYoutube />
-          <FaInstagram />
+          {links.map((link) => {
+            return <Link href={link.href}>{link.icon}</Link>;
+          })}
         </div>
         <h3 className="font-bold text-slate-300">Helpful links</h3>
       </div>

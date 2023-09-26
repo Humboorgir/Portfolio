@@ -31,7 +31,7 @@ const Project = ({ project, delay }: Props) => {
       </p>
       <Link
         variant="blue"
-        href="/somewebsite.com"
+        href={project.repo}
         className="!flex !w-full !items-center !justify-center !rounded-lg !py-2"
       >
         Repository <LaunchIcon />

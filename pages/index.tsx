@@ -62,7 +62,7 @@ export default function Home() {
 
             <HeroProgrammerImage />
           </div>
-          <BsArrowDown className="mx-auto mt-7 h-16 w-16 animate-bounce opacity-50 md:mb-8 md:mt-14" />
+          <BsArrowDown className="mx-auto mb-6 mt-4 h-16 w-16 animate-bounce opacity-50 md:mb-8 md:mt-14" />
         </Container>
       </section>
 

@@ -28,7 +28,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const toggleOpen = () => setOpen(!open);
   return (
-    <nav className="z-20 flex min-h-[70px] items-center justify-between md:py-3">
+    <nav className="z-20 flex min-h-[70px] items-center justify-between py-3">
       {/* logo and brand name (using a template for now since i dont have an actual logo) */}
       <div className="flex items-center gap-2">
         <Image
